@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-primary: #facc15; /* Bright Yellow/Gold */
+  --color-gold-secondary: #eab308; /* Darker Gold */
+  --color-dark-bg: #030014;
+}
+
+:root {
+  background-color: #000;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Premium Gold Glass Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(250, 204, 21, 0.1); /* Subtle Gold Border */
+}
+
+/* Golden Glow Text */
+.glow-text-gold {
+  text-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+}
+
+/* Custom Scrollbar for Luxury Look */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 10px;
+}
